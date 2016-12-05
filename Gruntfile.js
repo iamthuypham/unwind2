@@ -13,7 +13,7 @@ module.exports = function(grunt) {
                 files: [
                     './app/assets/**/*.{png,jpg,jpeg,mp3}',
                     './app/component/**/*.{js,html,css}',
-                    './app/form/**/*.{js,html,css}',
+                    './app/filterBar/**/*.{js,html,css}',
                     './app/layout/**/*.{js,html,css}',
                     './app/result/**/*.{js,html,css}',
                     'Gruntfile.js'
@@ -43,8 +43,8 @@ module.exports = function(grunt) {
                 }, {
                     expand: true,
                     src: [ './**/*.{js,html,css}' ],
-                    dest: './dist/form',
-                    cwd: './app/form'
+                    dest: './dist/filterBar',
+                    cwd: './app/filterBar'
                 }, {
                     expand: true,
                     src: [ './**/*.{js,html,css}' ],

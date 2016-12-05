@@ -3,10 +3,10 @@ var Hapi = require('hapi'),
     port = process.env.PORT || 3000,
     server = new Hapi.Server(port),
     routes = {
-        form: {
+        filterBar: {
             method: 'GET',
-            path: '/form/{path*}',
-            handler: createDirectoryRoute('form')
+            path: '/filterBar/{path*}',
+            handler: createDirectoryRoute('filterBar')
         },
         result: {
             method: 'GET',
@@ -34,7 +34,7 @@ var Hapi = require('hapi'),
         
     };
 
-server.route([ routes.form, routes.result, routes.layout, routes.component, routes.spa  ]);
+server.route([ routes.filterBar, routes.result, routes.layout, routes.component, routes.spa  ]);
 server.start( onServerStarted );
 
 function onServerStarted() {
