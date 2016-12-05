@@ -12,10 +12,10 @@ module.exports = function(grunt) {
             hapi: {
                 files: [
                     './app/assets/**/*.{png,jpg,jpeg,mp3}',
-                    './app/scripts/**/*.js',
-                    './app/styles/**/*.css',
-                    './app/pages/**/*.html',
-                    './app/templates/**/*.html',
+                    './app/component/**/*.{js,html,css}',
+                    './app/form/**/*.{js,html,css}',
+                    './app/layout/**/*.{js,html,css}',
+                    './app/result/**/*.{js,html,css}',
                     'Gruntfile.js'
                 ],
                 tasks: [
@@ -35,26 +35,26 @@ module.exports = function(grunt) {
                     src: [ './assets/**/*.{png,jpg,jpeg,mp3}' ],
                     dest: './dist',
                     cwd: './app'
+                },  {
+                    expand: true,
+                    src: [ './**/*.{js,html,css}' ],
+                    dest: './dist/component',
+                    cwd: './app/component'
                 }, {
                     expand: true,
-                    src: [ './**/*.html' ],
-                    dest: './dist',
-                    cwd: './app/pages'
+                    src: [ './**/*.{js,html,css}' ],
+                    dest: './dist/form',
+                    cwd: './app/form'
                 }, {
                     expand: true,
-                    src: [ './**/*.css' ],
-                    dest: './dist/styles',
-                    cwd: './app/styles'
+                    src: [ './**/*.{js,html,css}' ],
+                    dest: './dist/template',
+                    cwd: './app/template'
                 }, {
                     expand: true,
-                    src: [ './**/*.js' ],
-                    dest: './dist/scripts',
-                    cwd: './app/scripts'
-                }, {
-                    expand: true,
-                    src: [ './**/*.html' ],
-                    dest: './dist/templates',
-                    cwd: './app/templates'
+                    src: [ './**/*.{js,html,css}' ],
+                    dest: './dist/result',
+                    cwd: './app/result'
                 }]
             }
         },
