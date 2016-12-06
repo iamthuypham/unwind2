@@ -1,0 +1,38 @@
+<div class="result-list container">
+  <div class="col-sm-6">
+    <table st-table="myData" class="table table-responsive table-hover">
+      <thead><h2>Local Places</h2></thead>
+      <tbody>
+        <tr ng-repeat="data in myData">
+          <td class="col-sm-3"><img ng-src="{{data.pic}}"></td>
+          <td>
+            <h4>{{data.title}}</h4>
+            <p>{{data.description}}</p>
+          </td>
+          <td>
+            <h3>{{"$" + data.price}}</h3>
+            <i>{{data.unit}}</i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-sm-6">
+    <table st-table="myData" class="table table-responsive table-hover">
+      <thead><h2>Out Of States</h2></thead>
+      <tbody>
+        <tr ng-repeat="data in myData">
+          <td class="col-sm-3"><img ng-src="{{data.pic}}"></td>
+          <td>
+            <h4>{{data.title}}</h4>
+            <p>{{data.description}}</p>
+          </td>
+          <td>
+            <h3>{{"$" + data.price}}</h3>
+            <i>{{data.unit}}</i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

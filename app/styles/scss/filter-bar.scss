@@ -1,0 +1,46 @@
+.filter-bar {
+  max-width: 600px;
+  padding: 0;
+  background-color: $grey-light;
+}
+
+.time {
+  display: flex;
+  div {
+    width: 100%;
+    input {
+      display: none;
+    }
+    label {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 0;
+      padding: 15px 0;
+      background-color: $grey-light;
+    }
+    input:checked+label {
+      background-color: red;
+    }
+  }
+}
+
+.location {
+  display: flex;
+  text-align: center;
+  .icon {
+    width: 10%;
+    padding: 15px 0;
+    background-color: white;
+    border: 1px solid $grey-light;
+  }
+  .search-bar {
+    width: 75%;
+  }
+  .zip-code {
+    width: 15%;
+  }
+  input {
+    padding: 15px 15px;
+  }
+}

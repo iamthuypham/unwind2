@@ -22,7 +22,7 @@
       , 'ui.bootstrap'
       , 'ngAnimate'
       , 'ngTouch'
-      
+      , 'smart-table'
       ])
     .config(config)
 })();

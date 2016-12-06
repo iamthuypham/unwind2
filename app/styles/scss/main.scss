@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+ -moz-box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+ box-sizing: border-box;
+}
+
+html,
+body {
+ height: 100%;
+ width: 100%;
+ margin: 0;
+ padding: 0;
+ // overflow: hidden;
+ font-family: $open-sans;
+}
+
+table {
+ width: 100%;
+ padding: 5px 10px;
+}
+
+input {
+ border: 1px solid $grey-light;
+ @include input-none-spin-button;
+ font-family: $open-sans;
+}
