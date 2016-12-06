@@ -8,12 +8,17 @@ var Hapi = require('hapi'),
             path: '/filterBar/{path*}',
             handler: createDirectoryRoute('filterBar')
         },
-        result: {
+        resultList: {
             method: 'GET',
-            path: '/result/{path*}',
-            handler: createDirectoryRoute('result')
+            path: '/resultList/{path*}',
+            handler: createDirectoryRoute('resultList')
         },
-        layout: {
+        services: {
+            method: 'GET',
+            path: '/services/{path*}',
+            handler: createDirectoryRoute('services')
+        },
+        template: {
             method: 'GET',
             path: '/template/{path*}',
             handler: createDirectoryRoute('template')
@@ -22,8 +27,12 @@ var Hapi = require('hapi'),
             method: 'GET',
             path: '/component/{path*}',
             handler: createDirectoryRoute('component')
-        }
-        ,
+        },
+        css: {
+            method: 'GET',
+            path: '/styles/{path*}',
+            handler: createDirectoryRoute('styles')
+        },
         spa: {
             method: 'GET',
             path: '/{path*}',
@@ -34,7 +43,7 @@ var Hapi = require('hapi'),
         
     };
 
-server.route([ routes.filterBar, routes.result, routes.layout, routes.component, routes.spa  ]);
+server.route([ routes.filterBar, routes.resultList, routes.services, routes.template, routes.component, routes.css, routes.spa  ]);
 server.start( onServerStarted );
 
 function onServerStarted() {
