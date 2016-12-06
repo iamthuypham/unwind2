@@ -1,30 +1,29 @@
 <form class="filter-bar container">
-  <div class="time form-group">
+  <div class="time">
     <div>
       <input type='radio' value='0' name='radio' id='now' checked/>
       <label for='now'>Now</label>
     </div>
     <div>
-      <input type='radio' value='1' name='radio' id='tomorrow'/>
+      <input type='radio' value='1' name='radio' id='tomorrow' />
       <label for='tomorrow'>Tomorrow</label>
     </div>
     <div>
-      <input type='radio' value='2-3' name='radio' id='next2'/>
+      <input type='radio' value='2-3' name='radio' id='next2' />
       <label for='next2'>Next 2-3 days</label>
     </div>
     <div>
-      <input type='radio' value='4-6' name='radio' id='next4'/>
+      <input type='radio' value='4-6' name='radio' id='next4' />
       <label for='next4'>Next 4-6 days</label>
     </div>
     <div>
-      <input type='radio' value='7' name='radio' id='next-week'/>
+      <input type='radio' value='7' name='radio' id='next-week' />
       <label for='next-week'>Next Week</label>
     </div>
   </div>
-  <div class="location form-group">
-    <label class="col-sm-2 control-label" for="zipcode">Zip Code</label>
-    <div class="col-sm-2">
-      <input id="zipcode" class="form-control" type="number">
-    </div>
+  <div class="location">
+    <div class="icon"><i class="fa fa-search fa-lg" aria-hidden="true"></i></div>
+    <input class="search-bar" type="text" placeholder="Ex: family stay, self-retreat, etc.">
+    <input class="zip-code" type="number" placeholder="Zipcode">
   </div>
 </form>

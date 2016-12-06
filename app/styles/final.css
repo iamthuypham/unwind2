@@ -47,10 +47,29 @@ input {
     .time div input:checked + label {
       background-color: red; }
 
-.zipcode {
-  width: 100px; }
+.location {
+  display: flex;
+  text-align: center; }
+  .location .icon {
+    width: 10%;
+    padding: 15px 0;
+    background-color: white;
+    border: 1px solid #cecece; }
+  .location .search-bar {
+    width: 75%; }
+  .location .zip-code {
+    width: 15%; }
+  .location input {
+    padding: 15px 15px; }
 
-.form-control {
-  border-radius: 2px; }
+table tr {
+  cursor: pointer; }
+  table tr td:first-child {
+    padding: 0; }
+table img {
+  width: 100%; }
+table i {
+  color: #cecece;
+  font-size: 11px; }
 
 /*# sourceMappingURL=final.css.map */

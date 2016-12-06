@@ -1,4 +1,15 @@
-.my-Grid {
-  width: 500px;
-  height: 250px;
+table {
+  tr {
+    cursor: pointer;
+    td:first-child {
+      padding: 0;
+    }
+  }
+  img {
+    width: 100%;
+  }
+  i {
+    color: $grey-light;
+    font-size: 11px;
+  }
 }

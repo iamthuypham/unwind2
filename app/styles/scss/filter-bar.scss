@@ -25,10 +25,22 @@
   }
 }
 
-.zipcode {
-  width: 100px;
-}
-
-.form-control {
-  border-radius: 2px;
+.location {
+  display: flex;
+  text-align: center;
+  .icon {
+    width: 10%;
+    padding: 15px 0;
+    background-color: white;
+    border: 1px solid $grey-light;
+  }
+  .search-bar {
+    width: 75%;
+  }
+  .zip-code {
+    width: 15%;
+  }
+  input {
+    padding: 15px 15px;
+  }
 }
