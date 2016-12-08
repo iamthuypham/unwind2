@@ -1,9 +1,11 @@
 <div class="result-list container">
   <div class="col-sm-6">
     <table st-table="myData" class="table table-responsive table-hover">
-      <thead><h2>Local Places</h2></thead>
+      <thead>
+        <h2>Local Places</h2>
+      </thead>
       <tbody>
-        <tr ng-repeat="data in myData">
+        <tr ui-sref="item({itemId: data.id})" ng-repeat="data in myData">
           <td class="col-sm-3"><img ng-src="{{data.pic}}"></td>
           <td>
             <h4>{{data.title}}</h4>
@@ -19,7 +21,9 @@
   </div>
   <div class="col-sm-6">
     <table st-table="myData" class="table table-responsive table-hover">
-      <thead><h2>Out Of States</h2></thead>
+      <thead>
+        <h2>Out Of States</h2>
+      </thead>
       <tbody>
         <tr ng-repeat="data in myData">
           <td class="col-sm-3"><img ng-src="{{data.pic}}"></td>

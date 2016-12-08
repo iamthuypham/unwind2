@@ -17,7 +17,7 @@ module.exports = function(grunt) {
                     './app/styles/**/*.css',
                     './app/template/**/*.{js,html}',
                     './app/resultList/**/*.{js,html}',
-                    './app/services/**/*.{js,html}',
+                    './app/itemInfo/**/*.{js,html}',
                     'Gruntfile.js'
                 ],
                 tasks: [
@@ -52,6 +52,11 @@ module.exports = function(grunt) {
                     src: [ './**/*.{js,html}' ],
                     dest: './dist/filterBar',
                     cwd: './app/filterBar'
+                }, {
+                    expand: true,
+                    src: [ './**/*.{js,html}' ],
+                    dest: './dist/itemInfo',
+                    cwd: './app/itemInfo'
                 }, {
                     expand: true,
                     src: [ './**/*.{js,html}' ],

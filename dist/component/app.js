@@ -13,6 +13,11 @@
         // controller: 'LandingCtrl as landing',
         templateUrl: 'template/main.html'
       })
+      .state('item', {
+        url: '/item/:itemId',
+        templateUrl: 'template/item.html',
+        controller: 'itemCtrl'
+      })
   }
 
   angular
@@ -23,6 +28,8 @@
       , 'ngAnimate'
       , 'ngTouch'
       , 'smart-table'
+      
+  
       ])
     .config(config)
 })();
